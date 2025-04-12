@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 export const myContext = createContext();
 
 
@@ -35,7 +34,6 @@ export default function GlobalState({ children }){
       }
       
     }
-
 
 
 
@@ -101,7 +99,7 @@ export default function GlobalState({ children }){
          removeFromFavorite,
          isInFavorite,
          showNavbar,
-         setShowNavbar
+         setShowNavbar,
         }}>
       {children}
     </myContext.Provider>

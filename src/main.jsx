@@ -7,7 +7,7 @@ import App from "./App.jsx";
 import GlobalState from "../Context/GlobalContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Food-recipe-App-React/">
     <StrictMode>
       <GlobalState>
          <App />

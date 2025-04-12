@@ -1,11 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { myContext } from "../Context/GlobalContext";
 
 const Navbar = () => {
-  const { search, setSearch,handleSubmit,setShowNavbar,showNavbar } = useContext(myContext);
+  const { search, setSearch,handleSubmit,setShowNavbar,showNavbar,foodRecipe,searchedTitle } = useContext(myContext);
 
+
+ console.log(searchedTitle);
+ 
+  
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
