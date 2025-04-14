@@ -19,12 +19,12 @@ const Navbar = () => {
   
   return (
     <div>
-      <nav className="flex justify-between gap-3 items-center px-8 py-4">
+      <nav className="flex justify-between gap-6 items-center px-3 sm:px-8 py-4">
         <div className="text-gray-900 hidden sm:block font-bold sm:text-2xl"><Link to="/">FoodRecipe</Link></div>
         <div className="flex items-center">
           <input
             onChange={handleSearchChange}
-            className="border-1 border-gray-300 px-5 py-1.5  text-sm outline-0"
+            className="w-[100%] border-1 border-gray-300 px-5 py-1.5  text-sm outline-0"
             type="text"
             value={search}
             placeholder="Search food here..."

@@ -44,7 +44,7 @@ const Details = () => {
   
   
   return (
-    <div className='px-4'>
+    <div className='px-4 pb-5'>
        {
         detailInfo && 
         <div className='flex flex-col md:flex-row gap-6 max-w-6xl m-auto mt-12'>
